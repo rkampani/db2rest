@@ -21,11 +21,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @TestClassOrder(ClassOrderer.OrderAnnotation.class)
-@Order(504)
+@Order(501)
 @TestWithResources
 class MsSQLRSqlOperatorReadControllerTest extends MsSQLBaseIntegrationTest {
 
-   /* @Test
+    @Test
     @DisplayName("Test find with Equals Operator")
     void findWithEqualsOperator() throws Exception {
         mockMvc.perform(get(VERSION + "/mssql/film")
@@ -403,5 +403,5 @@ class MsSQLRSqlOperatorReadControllerTest extends MsSQLBaseIntegrationTest {
                 .andExpect(jsonPath("$.*", hasSize(0)))
                 .andDo(document("mssql-find-films-with-equals-and-like-and-in-and-less-operator"));
     }
-*/
+
 }

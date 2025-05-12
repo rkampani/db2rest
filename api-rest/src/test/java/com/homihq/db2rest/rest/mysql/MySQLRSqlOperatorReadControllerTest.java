@@ -19,12 +19,11 @@ import static org.hamcrest.core.AnyOf.anyOf;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @TestClassOrder(ClassOrderer.OrderAnnotation.class)
-@Order(93)
+@Order(1)
 @TestWithResources
 class MySQLRSqlOperatorReadControllerTest extends MySQLBaseIntegrationTest {
 

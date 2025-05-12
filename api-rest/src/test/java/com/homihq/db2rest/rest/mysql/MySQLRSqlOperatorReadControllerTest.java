@@ -27,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Order(93)
 @TestWithResources
 class MySQLRSqlOperatorReadControllerTest extends MySQLBaseIntegrationTest {
-/*
+
     @Test
     @DisplayName("Test find with Equals Operator")
     void findWithEqualsOperator() throws Exception {
@@ -405,6 +405,6 @@ class MySQLRSqlOperatorReadControllerTest extends MySQLBaseIntegrationTest {
                 .andExpect(jsonPath("$.*", hasSize(0)))
                 .andDo(document("mysql-find-films-with-equals-and-like-and-in-and-less-operator"));
     }
-*/
+
 
 }
